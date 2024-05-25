@@ -41,6 +41,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationRepeat(Animation animation) {}
+
         });
 
         // Apply animation to logo
