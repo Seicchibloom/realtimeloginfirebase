@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -43,10 +44,11 @@ public class ProfileActivity extends AppCompatActivity {
                 passUserData();
             }
         });
+
+        openMainPage();
     }
 
-    public void showUserData(){
-
+    public void showUserData() {
         Intent intent = getIntent();
 
         String nameUser = intent.getStringExtra("name");
@@ -62,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
         profilePassword.setText(passwordUser);
     }
 
-    public void passUserData(){
+    public void passUserData() {
         String userUsername = profileUsername.getText().toString().trim();
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
@@ -72,14 +74,12 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
-
                     String nameFromDB = snapshot.child(userUsername).child("name").getValue(String.class);
                     String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
                     String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
                     String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
 
                     Intent intent = new Intent(ProfileActivity.this, EditProfileActivity.class);
-
                     intent.putExtra("name", nameFromDB);
                     intent.putExtra("email", emailFromDB);
                     intent.putExtra("username", usernameFromDB);
@@ -91,7 +91,18 @@ public class ProfileActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+                // Handle possible errors
+            }
+        });
+    }
 
+    public void openMainPage() {
+        Button openMainPage = findViewById(R.id.viewPlaces);
+        openMainPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, MainPage.class);
+                startActivity(intent);
             }
         });
     }
