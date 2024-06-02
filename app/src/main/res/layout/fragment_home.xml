@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="413dp"
+        android:layout_height="734dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile_app"
+                android:layout_width="747dp"
+                android:layout_height="63dp"
+                android:src="@drawable/placeholder" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/roundcorner"
+                android:backgroundTint="#FFFFFF">
+
+            </SearchView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:text="Suggested Place"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="152dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/caviteskyranch" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="177dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/chocohills" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/puerto" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Popular Now"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/manilabay" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/tagaytay" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="172dp"
+                        android:layout_height="132dp"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/siargao" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Attractions"
+                android:textColor="#000000"
+                android:textSize="34dp" />
+
+            <HorizontalScrollView
+                android:layout_width="370dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="172dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/museum" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="155dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/enchantedkingdom" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/manilaoceanpark" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Categories"
+                android:textColor="#000000"
+                android:textSize="34dp"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:layout_editor_absoluteX="-9dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="89dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/graysquare" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="89dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/graysquare" />
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="89dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/graysquare" />
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="89dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/graysquare" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="89dp"
+                        android:layout_height="84dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/graysquare" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Popular Destination"
+                android:textColor="#000000"
+                android:textSize="34dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteY="650dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="200dp"
+                        android:layout_height="190dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/batanes" />
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="172dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/siquijor" />
+
+                    <ImageView
+                        android:id="@+id/imageView30"
+                        android:layout_width="155dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/baguio" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="108dp"
+                android:layout_height="53dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="150dp"
+                android:fontFamily="@font/cabin_condensed_bold"
+                android:text="Trips"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.044" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="294dp"
+                android:layout_height="142dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="294dp"
+                    android:layout_height="142dp"
+                    android:background="@drawable/d8" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="294dp"
+                android:layout_height="142dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="294dp"
+                    android:layout_height="142dp"
+                    android:background="@drawable/intramuros" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="294dp"
+                android:layout_height="142dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="294dp"
+                    android:layout_height="142dp"
+                    android:background="@drawable/museum" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="294dp"
+                android:layout_height="142dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="294dp"
+                    android:layout_height="142dp"
+                    android:background="@drawable/boracay" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="294dp"
+                android:layout_height="142dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="80dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="294dp"
+                    android:layout_height="142dp"
+                    android:background="@drawable/mtmayon" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
