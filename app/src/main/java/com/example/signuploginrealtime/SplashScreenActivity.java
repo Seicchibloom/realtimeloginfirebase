@@ -35,7 +35,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 // Start main activity after animation ends
-                startActivity(new Intent(SplashScreenActivity.this, SignupActivity.class));
+                startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
                 finish();
             }
 
